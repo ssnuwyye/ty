@@ -1,0 +1,132 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly tournament_manager, Version=0.0.*, Culture=Инвариантный язык (Инвариантная страна): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class CyberButton: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Button
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Drawing.Color CyberColor 'get set' : 
+  Methods:
+    get_CyberColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_CyberColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    OnMouseEnter(Object, EventArgs): PrivateScope, Public, HideBySig
+    OnMouseLeave(Object, EventArgs): PrivateScope, Public, HideBySig
+    OnPulseTick(Object, EventArgs): PrivateScope, Public, HideBySig
+Class DarkDataGridView: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.DataGridView
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class CyberTextBox: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.TextBox
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class CyberComboBox: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.ComboBox
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class TournamentTeamsForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(DatabaseManager*, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    InitializeComponent(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    CreateActionButton(String, Color): PrivateScope, Public, HideBySig
+    LoadAllTeams(): PrivateScope, Public, HideBySig
+    LoadTournamentTeams(): PrivateScope, Public, HideBySig
+    HandleAddTeam(Object, EventArgs): PrivateScope, Public, HideBySig
+    HandleRemoveTeam(Object, EventArgs): PrivateScope, Public, HideBySig
+    HandleClose(Object, EventArgs): PrivateScope, Public, HideBySig
+Class MainForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(DatabaseManager*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    InitializeForm(): PrivateScope, Public, HideBySig
+    InitializeSidebar(): PrivateScope, Public, HideBySig
+    CreateNavButton(String, Int32): PrivateScope, Public, HideBySig
+    InitializeMainPanel(): PrivateScope, Public, HideBySig
+    InitializeAllPages(): PrivateScope, Public, HideBySig
+    InitializeDashboardPage(): PrivateScope, Public, HideBySig
+    CreateStatCard(Int32, String, String, String, Int32, Color): PrivateScope, Public, HideBySig
+    CreateFormLabel(String, Int32): PrivateScope, Public, HideBySig
+    CreateFormTextBox(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    CreateActionButton(String, Color): PrivateScope, Public, HideBySig
+    ConvertUtf8ToString(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    LoadAllFilters(): PrivateScope, Public, HideBySig
+    LoadDashboardSportFilter(): PrivateScope, Public, HideBySig
+    LoadTournamentSportFormCombo(): PrivateScope, Public, HideBySig
+    OnNavClick(Object, EventArgs): PrivateScope, Public, HideBySig
+    SwitchPage(Int32): PrivateScope, Public, HideBySig
+    RefreshCurrentPage(): PrivateScope, Public, HideBySig
+    MainForm_Load(Object, EventArgs): PrivateScope, Public, HideBySig
+    LoadAllData(): PrivateScope, Public, HideBySig
+    OnDashboardSportFilterChanged(Object, EventArgs): PrivateScope, Public, HideBySig
+    UpdateDashboardStats(): PrivateScope, Public, HideBySig
+    LoadUpcomingMatches(Int32): PrivateScope, Public, HideBySig
+    LoadActiveTournaments(Int32): PrivateScope, Public, HideBySig
+    LoadSports(): PrivateScope, Public, HideBySig
+    LoadTournaments(): PrivateScope, Public, HideBySig
+    LoadFilteredTournaments(): PrivateScope, Public, HideBySig
+    LoadTournamentSportFilter(): PrivateScope, Public, HideBySig
+    OnTournamentSportFilterChanged(Object, EventArgs): PrivateScope, Public, HideBySig
+    LoadTeams(): PrivateScope, Public, HideBySig
+    LoadFilteredTeams(): PrivateScope, Public, HideBySig
+    LoadTeamSportFilter(): PrivateScope, Public, HideBySig
+    OnTeamSportFilterChanged(Object, EventArgs): PrivateScope, Public, HideBySig
+    LoadPlayers(): PrivateScope, Public, HideBySig
+    LoadMatchFilters(): PrivateScope, Public, HideBySig
+    OnMatchFilterChanged(Object, EventArgs): PrivateScope, Public, HideBySig
+    OnResetMatchFilters(Object, EventArgs): PrivateScope, Public, HideBySig
+    LoadFilteredMatches(): PrivateScope, Public, HideBySig
+    LoadMatches(): PrivateScope, Public, HideBySig
+    LoadComboBoxes(): PrivateScope, Public, HideBySig
+    OnMatchTournamentChanged(Object, EventArgs): PrivateScope, Public, HideBySig
+    InitializeSportsPage(): PrivateScope, Public, HideBySig
+    InitializeTournamentsPage(): PrivateScope, Public, HideBySig
+    InitializeTournamentDetailPage(): PrivateScope, Public, HideBySig
+    InitializeTeamsPage(): PrivateScope, Public, HideBySig
+    InitializeTeamDetailPage(): PrivateScope, Public, HideBySig
+    InitializePlayersPage(): PrivateScope, Public, HideBySig
+    InitializeMatchesPage(): PrivateScope, Public, HideBySig
+    HandleViewTournamentDetails(Object, EventArgs): PrivateScope, Public, HideBySig
+    LoadTournamentDetails(): PrivateScope, Public, HideBySig
+    HandleBackToTournaments(Object, EventArgs): PrivateScope, Public, HideBySig
+    HandleViewTeamDetails(Object, EventArgs): PrivateScope, Public, HideBySig
+    LoadTeamDetails(): PrivateScope, Public, HideBySig
+    HandleBackToTeams(Object, EventArgs): PrivateScope, Public, HideBySig
+    HandleSportCellClick(Object, DataGridViewCellEventArgs): PrivateScope, Public, HideBySig
+    HandleAddSport(Object, EventArgs): PrivateScope, Public, HideBySig
+    HandleUpdateSport(Object, EventArgs): PrivateScope, Public, HideBySig
+    HandleDeleteSport(Object, EventArgs): PrivateScope, Public, HideBySig
+    ClearSportForm(): PrivateScope, Public, HideBySig
+    HandleTournamentCellClick(Object, DataGridViewCellEventArgs): PrivateScope, Public, HideBySig
+    HandleAddTournament(Object, EventArgs): PrivateScope, Public, HideBySig
+    HandleUpdateTournament(Object, EventArgs): PrivateScope, Public, HideBySig
+    HandleDeleteTournament(Object, EventArgs): PrivateScope, Public, HideBySig
+    HandleStartTournament(Object, EventArgs): PrivateScope, Public, HideBySig
+    HandleManageTournamentTeams(Object, EventArgs): PrivateScope, Public, HideBySig
+    ClearTournamentForm(): PrivateScope, Public, HideBySig
+    HandleTeamCellClick(Object, DataGridViewCellEventArgs): PrivateScope, Public, HideBySig
+    HandleAddTeam(Object, EventArgs): PrivateScope, Public, HideBySig
+    HandleUpdateTeam(Object, EventArgs): PrivateScope, Public, HideBySig
+    HandleDeleteTeam(Object, EventArgs): PrivateScope, Public, HideBySig
+    ClearTeamForm(): PrivateScope, Public, HideBySig
+    HandlePlayerCellClick(Object, DataGridViewCellEventArgs): PrivateScope, Public, HideBySig
+    HandleAddPlayer(Object, EventArgs): PrivateScope, Public, HideBySig
+    HandleUpdatePlayer(Object, EventArgs): PrivateScope, Public, HideBySig
+    HandleDeletePlayer(Object, EventArgs): PrivateScope, Public, HideBySig
+    ClearPlayerForm(): PrivateScope, Public, HideBySig
+    HandleMatchCellClick(Object, DataGridViewCellEventArgs): PrivateScope, Public, HideBySig
+    HandleAddMatch(Object, EventArgs): PrivateScope, Public, HideBySig
+    HandleUpdateMatch(Object, EventArgs): PrivateScope, Public, HideBySig
+    HandleDeleteMatch(Object, EventArgs): PrivateScope, Public, HideBySig
+    HandleStartMatch(Object, EventArgs): PrivateScope, Public, HideBySig
+    HandleFinishMatch(Object, EventArgs): PrivateScope, Public, HideBySig
+    ClearMatchForm(): PrivateScope, Public, HideBySig
